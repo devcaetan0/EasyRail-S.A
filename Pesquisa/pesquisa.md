@@ -51,20 +51,9 @@ O comando UPDATE é usado para modificar registros existentes no banco de dados.
 Uma operação UPDATE pode modificar e persistir alterações em um único campo ou em vários campos do registro. Se vários campos precisarem ser atualizados, o sistema de banco de dados garante que todos sejam atualizados ou que nenhum seja. 
 
 
-
-
-
-
-
-
-
 Delete:
 
 As operações DELETE permitem ao usuário remover registros do banco de dados. Uma exclusão permanente, remove o registro completamente, enquanto uma remoção temporária sinaliza o registro, mas mantém no banco de dados. Isso se aplica por exemplo numa folha de pagamento, onde os registros de emprego precisam ser mantidos mesmo depois que um funcionário deixa a empresa.
-
-
-
-
 
 
 
@@ -75,6 +64,6 @@ As operações serão aplicadas em basicamente todas as áreas do nosso projeto.
 
 Quando um sensor detecta as locomotivas os dados são processados em tempo real e é sempre preciso procurar/ ler estes dados para estudo e análise então utilizaremos muito o comando READ para isto.
 
- E então com os dados sendo processados em tempo real nós precisamos atualizar sempre os dados novos que são processados, novos problemas, problemas nos trens, as variáveis de dados, em resumo o desempenho do trem e para atualizar este dados utilizaremos o comando UPDATE, no projeto.
+E então com os dados sendo processados em tempo real nós precisamos atualizar sempre os dados novos que são processados, novos problemas, problemas nos trens, as variáveis de dados, em resumo o desempenho do trem e para atualizar este dados utilizaremos o comando UPDATE, no projeto.
 
 O comando DELETE nos utilizaremos para deletar os registros, como uma pessoa que foi desligada da empresa que não tem mais ao acesso do dashboard, um trem que estragou e nao tem mais concerto então deletamos os seus dados, um sensor que entrou em falha e nao tem concerto apagamos seu registro e entre outras situações que utilizaremos o delete.
