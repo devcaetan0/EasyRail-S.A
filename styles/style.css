@@ -1,28 +1,23 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
+:root {
+    --cor-laranja: #fd7a00;
 }
 
-#body-index {
+/* ===== CADASTRO DE FUNCIONÁRIOS ===== */
+
+#body-cadastro {
     background-image: url(/assets/images/fundo-login.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
 }
 
 
-#main-index {
-    width: 50%;  
-}
-
-body {
+#main-cadastro {
+    background-color: var(--cor-laranja);
+    float: right;
+    opacity: calc(95%);
     color: white;
+}
 
+#botao-envio {
+    background-color: white;
 }
