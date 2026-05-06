@@ -15,9 +15,28 @@
     </header>
 
     <main id="main-index" class="d-flex">
-        <form action="">
+      <form action="" id="formulario" class="shadow p-3 mb-5 bg-dark-subtle rounded m-5 opacity-100 col-md-5">
+        <div>
+            <h1 class="text-center">EASYRAIL</h1>
+            <p class="text-center">Preencha os dados abaixo para logar em sua conta no Fórum de Hearts of Iron IV</p>
+        </div>
 
-        </form>
+        <div>
+            <div>
+                <label for="">Username</label>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" id="usuario" >
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label for="">Senha</label>
+                <input type="password" class="form-control" aria-label="Username" aria-describedby="basic-addon1" id="senha">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3 alignRight" id="submit">Fazer Login</button>
+</form>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

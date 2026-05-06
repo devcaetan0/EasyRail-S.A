@@ -6,6 +6,9 @@
 
 #main-index {
     background-color: orange;
-    width: 50%;
-    
+    width: 50%;   
+}
+
+body {
+    color: white;
 }
