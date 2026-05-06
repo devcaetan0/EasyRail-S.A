@@ -21,3 +21,10 @@
 #botao-envio {
     background-color: white;
 }
+
+.deco-icon {
+position: absolute;
+margin-top: 35px;
+height: 140px;
+margin-left: 780px;
+}
