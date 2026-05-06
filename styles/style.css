@@ -1,11 +1,29 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
 #body-index {
     background-image: url(/assets/images/fundo-login.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
+
 
 #main-index {
     background-color: orange;
-    width: 50%;
-    
+    position: absolute;
+    right: -10vw;
+    top: -15vh;
+    width: 60vw;
+    height: 130vh;
+    transform: rotate(5deg);
 }
