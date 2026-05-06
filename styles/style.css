@@ -27,4 +27,15 @@ position: absolute;
 margin-top: 35px;
 height: 140px;
 margin-left: 780px;
+    color: var(--cor-laranja);
+    font-size: 40px;
+    margin-top: 25%;
+}
+
+.arredonda {
+    border-radius: 50px;
+}
+
+#form-login {
+    font-size: 25px;
 }
