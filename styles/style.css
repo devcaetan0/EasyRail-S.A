@@ -20,4 +20,14 @@
 
 #botao-envio {
     background-color: white;
+    color: var(--cor-laranja);
+    font-size: 35px;
+}
+
+.arredonda {
+    border-radius: 50px;
+}
+
+#form-login {
+    font-size: 25px;
 }

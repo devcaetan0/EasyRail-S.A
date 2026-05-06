@@ -17,19 +17,25 @@
     <main id="main-cadastro" class="w-50 h-100">
         <div class="p-5 m-5">
             <div class="card-body p-5 m-5">
-                <h2>Login</h2>
-
+                <h2 style="font-size: 50px;">EASYRAIL</h2>
                 <form id="form-login">
-                    <label for="nome">Nome:</label>
-                    <input class="form-control" type="text" id="nome_cadastro" required>
 
-                    <label for="senha">Senha:</label>
-                    <input class="form-control" type="password" id="senha_cadastro" required>
+                    <div class="mt-3 mb-3">
+                        <label for="nome">Nome de Usuário:</label>
+                        <input class="form-control arredonda" type="text" id="nome_cadastro" required>
+                    </div>
 
-                    <input type="checkbox">
-                    <label>Mantenha-me logado</label><br>
+                    <div class="mt-3 mb-3">
+                        <label for="senha">Senha:</label>
+                        <input class="form-control arredonda" type="password" id="senha_cadastro" required>
+                    </div>
 
-                    <button class="btn mt-3 w-50" id="botao-envio" type="submit">Entrar</button>
+                    <div class="mt-3 mb-3">
+                        <input type="checkbox">
+                        <label>Mantenha-me logado</label><br>
+                    </div>
+
+                    <button class="btn w-75 arredonda" id="botao-envio" type="submit">Entrar</button>
                 </form>
             </div>
         </div>
