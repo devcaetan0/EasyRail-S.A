@@ -1,0 +1,11 @@
+#body-index {
+    background-image: url(/assets/images/fundo-login.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main-index {
+    background-color: orange;
+    width: 50%;
+    
+}
