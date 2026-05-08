@@ -4,13 +4,13 @@
 
 /* ===== CADASTRO DE FUNCIONÁRIOS ===== */
 
-#body-cadastro {
-    background-image: url(/assets/images/fundo-login.webp);
+#body-login {
+    background-image: url(../assets/images/fundo-login.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#main-cadastro {
+#main-login {
     background-color: var(--cor-laranja);
     float: right;
     opacity: calc(95%);
