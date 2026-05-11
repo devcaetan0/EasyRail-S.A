@@ -1,8 +1,9 @@
 :root {
-    --cor-laranja: #fd7a00;
+    --cor-laranja: #fa8415;
+    --cor-preto: #000000;
 }
 
-/* ===== CADASTRO DE FUNCIONÁRIOS ===== */
+/* ===== LOGIN ===== */
 
 #body-login {
     background-image: url(../assets/images/fundo-login.webp);
@@ -14,25 +15,21 @@
     background-color: var(--cor-laranja);
     float: right;
     opacity: calc(95%);
-    color: white;
+    color: var(--cor-preto);
+    width: 40%;
 }
 
 #botao-envio {
     background-color: white;
-    color: var(--cor-laranja);
-    font-size: 40px;
-    margin-top: 25%;
+    color: var(--cor-preto);
+    font-size: 25px;
 }
 
 .deco-icon {
     position: absolute;
     margin-top: 35px;
-    height: 140px;
-    margin-left: 780px;
-}
-
-.arredonda {
-    border-radius: 50px;
+    height: 100px;
+    margin-left: 35px;
 }
 
 #form-login {
