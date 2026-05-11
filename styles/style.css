@@ -35,3 +35,9 @@
 #form-login {
     font-size: 25px;
 }
+
+/* ===== MAIN ===== */
+
+#navbar {
+    background-color: var(--cor-laranja);
+}
