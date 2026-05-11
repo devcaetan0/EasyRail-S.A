@@ -40,4 +40,5 @@
 
 #navbar {
     background-color: var(--cor-laranja);
+    font-weight: bold;
 }
