@@ -42,3 +42,41 @@
     background-color: var(--cor-laranja);
     font-weight: bold;
 }
+
+
+/* ===== CADASTRO FUNCINÁRIOS ===== */
+
+#body-index{
+
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-left: 65px;
+}
+
+.cadastro{
+
+    border-color: #fd7e14;
+    border: 2px solid #fd7e14;
+
+
+}
+
+.borda-cadastro{
+    
+    border-color: #fd7e14;
+     border: 2px solid #fd7e14;
+
+}
+
+.botao-cadastro{
+
+    color: black;
+    background-color: #fd7e14;
+}
+
+.titulo-cadastro{
+
+    margin-left: 100px;
+    margin-top: 70px;
+
+}
