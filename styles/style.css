@@ -3,7 +3,12 @@
     --cor-preto: #000000;
 }
 
-/* ===== LOGIN ===== */
+#navbar {
+    background-color: var(--cor-laranja);
+    font-weight: bold;
+}
+
+/* ===== INDEX ===== */
 
 #body-login {
     background-image: url(../assets/images/fundo-login.webp);
@@ -36,24 +41,20 @@
     font-size: 25px;
 }
 
-/* ===== MAIN ===== */
-
-#navbar {
-    background-color: var(--cor-laranja);
-    font-weight: bold;
-}
+/* ===== PÁGINA HOME ===== */
 
 
-/* ===== CADASTRO FUNCINÁRIOS ===== */
 
-#body-index{
+/* ===== CADASTRO FUNCIONÁRIOS ===== */
+
+#body-index {
 
     margin-top: 100px;
     margin-right: 40px;
     margin-left: 65px;
 }
 
-.cadastro{
+.cadastro {
 
     border-color: #fd7e14;
     border: 2px solid #fd7e14;
@@ -61,20 +62,20 @@
 
 }
 
-.borda-cadastro{
-    
+.borda-cadastro {
+
     border-color: #fd7e14;
-     border: 2px solid #fd7e14;
+    border: 2px solid #fd7e14;
 
 }
 
-.botao-cadastro{
+.botao-cadastro {
 
     color: black;
     background-color: #fd7e14;
 }
 
-.titulo-cadastro{
+.titulo-cadastro {
 
     margin-left: 100px;
     margin-top: 70px;
