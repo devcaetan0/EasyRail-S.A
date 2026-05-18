@@ -22,6 +22,15 @@ Além dos principais componentes citados acima, várias outras ferramentas e bib
 
 Esses componentes adicionais ampliam ainda mais as funcionalidades do XAMPP, transformando-o em uma solução completa para desenvolvedores.
 
+breve resumo:
+
+Apache HTTP Server: hospedar e executar páginas web localmente.
+MySQL / MariaDB: armazenar e gerenciar dados da aplicação.
+PHP: criar funcionalidades e páginas web dinâmicas.
+Perl: automatizar tarefas e executar scripts.
+phpMyAdmin: administrar o banco de dados por interface gráfica.
+OpenSSL: fornecer segurança e criptografia de dados.
+
 
 
 
