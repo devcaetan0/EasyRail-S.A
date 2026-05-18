@@ -26,7 +26,7 @@
                         <a class="nav-link" href="#">Frota de Carga</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sensores IoT</a>
+                        <a class="nav-link" href="sensores.html">Sensores IoT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Relatórios</a>
@@ -41,54 +41,45 @@
     </header>
 
 
-    <h1 class="titulo-cadastro fw-bold">Cadastro de Funcionário</h1>
+    <h1 class="titulo-funcionarios fw-bold">Cadastro de Funcionário</h1>
 
-    <main id="body-index" class="text-black">
-
-
-
+    <main id="body-funcionarios" class="text-black">
         <div class="d-flex">
             <div class="col-10 col-md-4 col-lg-3 px-4">
-
-                <div class="cadastro card shadow p-3">
+                <div class="card borda-funcionarios shadow p-3">
                     <div class="card-body">
-
-                        <form id="form-cadastro" class="row g-3">
+                        <form id="form-funcionarios" class="row g-3">
                             <h2 id="titulo" class="text-center fw-bold"></h2>
 
                             <div class="mb-2">
                                 <label for="nome" class="form-label fw-bold ">Nome Usuário</label>
-                                <input type="text" class="form-control borda-cadastro" id="nome" required>
+                                <input type="text" class="form-control borda-funcionarios" id="nome" required>
                             </div>
 
                             <div class="mb-2">
                                 <label for="senha" class="form-label fw-bold">Email Institucional </label>
-                                <input type="email" class="form-control borda-cadastro" id="email" required>
+                                <input type="email" class="form-control borda-funcionarios" id="email" required>
                             </div>
 
                             <div class="mb-2">
                                 <label for="email" class="form-label fw-bold">Senha Funcionário</label>
-                                <input type="password" class="form-control borda-cadastro" id="senha" required>
+                                <input type="password" class="form-control borda-funcionarios" id="senha" required>
                             </div>
 
                             <div class="mb-2">
                                 <label for="setor" class="form-label fw-bold">Setor</label>
-                                <select name="Setor" class="form-control borda-cadastro" id="setor" required>
-
+                                <select name="Setor" class="form-control borda-funcionarios" id="setor" required>
                                     <option selected>Gestão</option>
                                     <option value="1">Chefe - Setor</option>
                                     <option value="2">Operacional</option>
                                     <option value="3">Administrativo</option>
                                     <option value="4">Funcionários</option>
-
                                 </select>
-
                             </div>
 
-
                             <div class="mb-2 mt-4">
-                                <button type="submit" class="botao-cadastro borda-cadastro w-100 py-2 fw-bold">
-                                    Fazer Login
+                                <button type="submit" class="botao-funcionarios borda-funcionarios w-100 py-2 fw-bold">
+                                    Cadastrar
                                 </button>
                             </div>
                         </form>
@@ -100,76 +91,78 @@
                 </div>
 
             </div>
-            
-<div class="container mt-4">
-    <div class="card p-3 mb-4 shadow-sm">
 
-    <div class="row mb-4">
+            <div class="container mt-4">
+                <div class="card p-3 mb-4 shadow-sm">
 
-        <div class="col-md-6">
-            <label>Pesquisar</label>
-            <input class="form-control">
-        </div>
+                    <div class="row mb-4">
 
-        <div class="col-md-6">
-            <label>Atuação</label>
-            <select class="form-select">
-                <option>Todos</option>
-                <option>Gestão</option>
-                <option>Chefe - Setor</option>
-                <option>Operacional</option>
-                <option>Administrativo</option>
-                <option>Funcionários</option>
-            </select>
-        </div>
+                        <div class="col-md-6">
+                            <label>Pesquisar</label>
+                            <input class="form-control">
+                        </div>
 
-    </div>
-</div>
-<div class="card p-3 mt-4">
+                        <div class="col-md-6">
+                            <label>Atuação</label>
+                            <select class="form-select">
+                                <option>Todos</option>
+                                <option>Gestão</option>
+                                <option>Chefe - Setor</option>
+                                <option>Operacional</option>
+                                <option>Administrativo</option>
+                                <option>Funcionários</option>
+                            </select>
+                        </div>
 
-    <table class="table table-hover">
-         <thead>
-            <tr>
-                <th>Funcionário</th>
-                <th>Setor</th>
-                <th>Nome</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
+                    </div>
+                </div>
+                <div class="card p-3 mt-4">
 
-        <tbody>
-            <tr>
-                <td>#00001</td>
-                <td>Gestão</td>
-                <td>Caio Leite</td>
-                <td>👁 ✏ 🗑</td>
-            </tr>
-            <tr>
-                <td>#00001</td>
-                <td>Gestão</td>
-                <td>Caio Leite</td>
-                <td>👁 ✏ 🗑</td>
-            </tr><tr>
-                <td>#00001</td>
-                <td>Gestão</td>
-                <td>Caio Leite</td>
-                <td>👁 ✏ 🗑</td>
-            </tr><tr>
-                <td>#00001</td>
-                <td>Gestão</td>
-                <td>Caio Leite</td>
-                <td>👁 ✏ 🗑</td>
-            </tr>
-        </tbody>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Funcionário</th>
+                                <th>Setor</th>
+                                <th>Nome</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
 
-    </table>
+                        <tbody>
+                            <tr>
+                                <td>#00001</td>
+                                <td>Gestão</td>
+                                <td>Caio Leite</td>
+                                <td>👁 ✏ 🗑</td>
+                            </tr>
+                            <tr>
+                                <td>#00001</td>
+                                <td>Gestão</td>
+                                <td>Caio Leite</td>
+                                <td>👁 ✏ 🗑</td>
+                            </tr>
+                            <tr>
+                                <td>#00001</td>
+                                <td>Gestão</td>
+                                <td>Caio Leite</td>
+                                <td>👁 ✏ 🗑</td>
+                            </tr>
+                            <tr>
+                                <td>#00001</td>
+                                <td>Gestão</td>
+                                <td>Caio Leite</td>
+                                <td>👁 ✏ 🗑</td>
+                            </tr>
+                        </tbody>
 
-</div>
-    </table>
+                    </table>
 
-</div>
- 
-                
+                </div>
+                </table>
+
+            </div>
+
+
 
 
     </main>
