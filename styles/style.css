@@ -49,6 +49,12 @@
 
 /* ===== PÁGINA HOME ===== */
 
+.logo-home {
+    height: 400px;
+    width: 400px;
+    margin-top: 50px;
+}
+
 .titulo-home {
     font-size: 35px;
 }
@@ -61,10 +67,8 @@
 
 .btn-home {
     background-color: var(--cor-laranja);
-    border: 3px solid var(--cor-laranja);
     color: var(--cor-preto);
     font-weight: bold;
-    padding: 8px 15px;
     border-radius: 5px;
 }
 
@@ -74,18 +78,18 @@
 }
 
 .fade-in {
-    animation: fade-in 1.5s ease;
+    animation: fade-in 1.5s;
 }
 
 @keyframes fade-in {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(100px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0px);
     }
 }
 
