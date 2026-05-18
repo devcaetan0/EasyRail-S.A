@@ -117,6 +117,7 @@
 
     color: black;
     background-color: #fd7e14;
+    border-radius: 2px;
 }
 
 .titulo-cadastro {
@@ -133,7 +134,33 @@
 .titulo-cadastro-s {
 
     margin-left: 325px;
-    margin-top: 55px;
+    margin-top: 70px;
+   
+}
 
+
+.botao-sensor{
+
+margin-left: 1365px;
 
 }
+
+.botao-sensor-cor{
+
+    color: black;
+    background-color: #fd7e14;
+    border-radius: 3px;
+    width: 190px;
+    height: 30px;
+}
+
+.borda-sensor{
+
+
+    border-color: #fd7e14;
+    border: 2px solid #fd7e14;
+
+}
+
+
+
