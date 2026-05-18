@@ -41,85 +41,39 @@
     </header>
 
 
-    <h1 class="titulo-cadastro fw-bold">Cadastro de Funcionário</h1>
+    <h1 class="titulo-cadastro-s fw-bold"> Cadastro de Sensores </h1>
 
     <main id="body-index" class="text-black">
 
+ <div class="botao-sensor">
+
+            <button class="botao-sensor-cor borda-sensor fw-bold" type="submit"> 
+
+                + Adicionar Sensor
+
+            </button>
 
 
-        <div class="d-flex">
-            <div class="col-10 col-md-4 col-lg-3 px-4">
-
-                <div class="cadastro card shadow p-3">
-                    <div class="card-body">
-
-                        <form id="form-cadastro" class="row g-3">
-                            <h2 id="titulo" class="text-center fw-bold"></h2>
-
-                            <div class="mb-2">
-                                <label for="nome" class="form-label fw-bold ">Nome Usuário</label>
-                                <input type="text" class="form-control borda-cadastro" id="nome" required>
-                            </div>
-
-                            <div class="mb-2">
-                                <label for="senha" class="form-label fw-bold">Email Institucional </label>
-                                <input type="email" class="form-control borda-cadastro" id="email" required>
-                            </div>
-
-                            <div class="mb-2">
-                                <label for="email" class="form-label fw-bold">Senha Funcionário</label>
-                                <input type="password" class="form-control borda-cadastro" id="senha" required>
-                            </div>
-
-                            <div class="mb-2">
-                                <label for="setor" class="form-label fw-bold">Setor</label>
-                                <select name="Setor" class="form-control borda-cadastro" id="setor" required>
-
-                                    <option selected>Gestão</option>
-                                    <option value="1">Chefe - Setor</option>
-                                    <option value="2">Operacional</option>
-                                    <option value="3">Administrativo</option>
-                                    <option value="4">Funcionários</option>
-
-                                </select>
-
-                            </div>
-
-
-                            <div class="mb-2 mt-4">
-                                <button type="submit" class="botao-cadastro borda-cadastro w-100 py-2 fw-bold">
-                                    Fazer Login
-                                </button>
-                            </div>
-                        </form>
-
-                        <div id="mensagem" class="text-center mt-3"></div>
-                        <div class="toggle text-center mt-2" id="toggle"></div>
-
-                    </div>
-                </div>
-
-            </div>
+        </div>
             
 <div class="container mt-4">
     <div class="card p-3 mb-4 shadow-sm">
+
 
     <div class="row mb-4">
 
         <div class="col-md-6">
             <label>Pesquisar</label>
-            <input class="form-control">
+            <input class="form-control" placeholder="Modelo/ID">
         </div>
 
         <div class="col-md-6">
             <label>Atuação</label>
             <select class="form-select">
                 <option>Todos</option>
-                <option>Gestão</option>
-                <option>Chefe - Setor</option>
-                <option>Operacional</option>
-                <option>Administrativo</option>
-                <option>Funcionários</option>
+                <option>Ativado</option>
+                <option>Inativado</option>
+                <option>Desativado</option>
             </select>
         </div>
 
