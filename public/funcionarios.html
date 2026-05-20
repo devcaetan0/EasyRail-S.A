@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="icon" href="../assets/images/logo.png" type="image/png">
+    <link class="borda-laranja" rel="icon" href="../assets/images/logo.png" type="image/png">
     <title>Página Funcionários - EasyRail</title>
 </head>
 
@@ -19,21 +19,11 @@
             </a>
             <div class="collapse navbar-collapse d-flex justify-content-center">
                 <ul class="navbar-nav gap-4">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Frota de Carga</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sensores.html">Sensores IoT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Relatórios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="funcionarios.html">Funcionários</a>
-                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Frota de Carga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sensores.html">Sensores IoT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Relatórios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="funcionarios.html">Funcionários</a></li>
                 </ul>
             </div>
             <a class="navbar-brand" href="../index.html">Sair</a>
@@ -43,34 +33,34 @@
     <h1 class="titulo-pagina fw-bold">Cadastro de Funcionário</h1>
 
     <main class="main-padrao">
-        <div class="d-flex">
-            <div class="col-10 col-md-4 col-lg-3 px-4">
-                <div class="card borda-laranja rounded shadow-sm p-3">
+        <div class="row">
+            <div class="col-md-4 col-lg-3 mb-4">
+                <div class="card borda-laranja shadow-sm p-3">
                     <div class="card-body">
                         <form id="form-funcionarios" class="row g-3">
                             <h2 id="titulo" class="text-center fw-bold"></h2>
 
                             <div class="mb-2">
-                                <label for="nome" class="form-label fw-bold ">Nome Usuário</label>
-                                <input type="text" class="form-control borda-laranja rounded" id="nome"
-                                    value="Digite o nome" required>
+                                <label for="nome" class="form-label fw-bold">Nome Usuário</label>
+                                <input type="text" class="form-control borda-laranja" id="nome" value="Digite o nome"
+                                    required>
                             </div>
 
                             <div class="mb-2">
-                                <label for="senha" class="form-label fw-bold">E-mail Institucional </label>
-                                <input type="email" class="form-control borda-laranja rounded" id="email"
-                                    value="Digite@email" required>
+                                <label for="email" class="form-label fw-bold">Email Institucional</label>
+                                <input type="email" class="form-control borda-laranja" id="email" value="Digite@mail"
+                                    required>
                             </div>
 
                             <div class="mb-2">
-                                <label for="email" class="form-label fw-bold">Senha Funcionário</label>
-                                <input type="password" class="form-control borda-laranja rounded" id="senha"
+                                <label for="senha" class="form-label fw-bold">Senha Funcionário</label>
+                                <input type="password" class="form-control borda-laranja" id="senha"
                                     value="Digite a senha" required>
                             </div>
 
                             <div class="mb-2">
                                 <label for="setor" class="form-label fw-bold">Setor</label>
-                                <select name="Setor" class="form-control borda-laranja rounded" id="setor" required>
+                                <select name="Setor" class="form-control borda-laranja" id="setor" required>
                                     <option selected>Gestão</option>
                                     <option value="1">Chefe - Setor</option>
                                     <option value="2">Operacional</option>
@@ -80,30 +70,22 @@
                             </div>
 
                             <div class="mb-2 mt-4">
-                                <button type="submit" class="btn-laranja rounded w-100 p-2 fw-bold">
-                                    Cadastrar
-                                </button>
+                                <button type="submit" class="btn btn-laranja w-100 py-2 fw-bold">Cadastrar</button>
                             </div>
                         </form>
-
                         <div id="mensagem" class="text-center mt-3"></div>
                         <div class="toggle text-center mt-2" id="toggle"></div>
-
                     </div>
                 </div>
-
             </div>
 
-            <div class="container mt-4">
+            <div class="col-md-8 col-lg-9">
                 <div class="card p-3 mb-4 shadow-sm">
-
-                    <div class="row mb-4">
-
-                        <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 mb-2 mb-md-0">
                             <label class="fw-bold form-label">Pesquisar</label>
                             <input class="form-control" placeholder="Nome / ID">
                         </div>
-
                         <div class="col-md-6">
                             <label class="fw-bold form-label">Atuação</label>
                             <select class="form-select">
@@ -115,38 +97,36 @@
                                 <option>Funcionários</option>
                             </select>
                         </div>
-
                     </div>
                 </div>
-                <div class="card p-3 mt-4">
 
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th>Funcionário</th>
-                                <th>Setor</th>
-                                <th>Nome</th>
-                                <th>Ações</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr id="1">
-                                <td>#00001</td>
-                                <td>Gestão</td>
-                                <td>Caio Leite</td>
-                                <td><button class="btn-editar" id="1">✏</button><button class="btn-excluir"
-                                        id="1">🗑</button></td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-
+                <div class="card p-3 shadow-sm">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Funcionário</th>
+                                    <th>Setor</th>
+                                    <th>Nome</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="1">
+                                    <td>#00001</td>
+                                    <td>Gestão</td>
+                                    <td>Caio Leite</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-secondary" id="1">✏</button>
+                                        <button class="btn btn-sm btn-outline-danger" id="1">🗑</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-
             </div>
         </div>
-
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

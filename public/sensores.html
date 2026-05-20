@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="icon" href="../assets/images/logo.png" type="image/png">
-    <title>Página Funcionários - EasyRail</title>
+    <title>Página Sensores - EasyRail</title>
 </head>
 
 <body>
@@ -19,21 +19,11 @@
             </a>
             <div class="collapse navbar-collapse d-flex justify-content-center">
                 <ul class="navbar-nav gap-4">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Frota de Carga</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sensores.html">Sensores IoT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Relatórios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="funcionarios.html">Funcionários</a>
-                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Frota de Carga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sensores.html">Sensores IoT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Relatórios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="funcionarios.html">Funcionários</a></li>
                 </ul>
             </div>
             <a class="navbar-brand" href="../index.html">Sair</a>
@@ -43,65 +33,62 @@
     <h1 class="titulo-pagina fw-bold">Cadastro de Sensores</h1>
 
     <main class="main-padrao">
-        <button type="button" class="btn btn-laranja btn-adicionar ml-btn fw-bold" data-bs-toggle="modal"
-            data-bs-target="#modalCadastro">
-            + Adicionar Sensor
-        </button>
-        </div>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-end mb-3">
+                <button type="button" class="btn btn-laranja fw-bold p-2" data-bs-toggle="modal"
+                    data-bs-target="#modalCadastro">
+                    + Adicionar Sensor
+                </button>
+            </div>
 
-        <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content text-start p-2">
-                    <div class="modal-header">
-                        <h5 class="modal-title fw-bold" id="modalCadastroLabel">Cadastrar Novo Sensor</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="modal-body">
-                        <form id="form-sensor">
-                            <div class="mb-3">
-                                <label for="id-sensor" class="form-label fw-bold">ID do Sensor</label>
-                                <input type="text" class="form-control" id="id-sensor" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="setor-sensor" class="form-label fw-bold">Localização</label>
-                                <input type="text" class="form-control" id="setor-sensor" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="nome-sensor" class="form-label fw-bold">Nome / Modelo</label>
-                                <input type="text" class="form-control" id="nome-sensor" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="fw-bold form-label">Tipo</label>
-                                <select class="form-select">
-                                    <option value="">Selecionar</option>
-                                    <option>Temperatura</option>
-                                    <option>Velocidade</option>
-                                    <option>Energia</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="d-flex justify-content-between p-3">
-                        <button type="button" class="btn btn-secondary fw-bold"
-                            data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-laranja" id="btn-salvar">Salvar Sensor</button>
+            <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content text-start">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold" id="modalCadastroLabel">Cadastrar Novo Sensor</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="form-sensor">
+                                <div class="mb-3">
+                                    <label for="id-sensor" class="form-label fw-bold">ID do Sensor</label>
+                                    <input type="text" class="form-control" id="id-sensor" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="setor-sensor" class="form-label fw-bold">Localização</label>
+                                    <input type="text" class="form-control" id="setor-sensor" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nome-sensor" class="form-label fw-bold">Nome</label>
+                                    <input type="text" class="form-control" id="nome-sensor" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="fw-bold form-label">Tipo</label>
+                                    <select class="form-select">
+                                        <option>Selecionar</option>
+                                        <option>Temperatura</option>
+                                        <option>Velocidade</option>
+                                        <option>Energia</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-secondary fw-bold"
+                                data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-laranja" id="btn-salvar">Salvar Sensor</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container mt-4">
             <div class="card p-3 mb-4 shadow-sm">
-                <div class="row mb-4">
-
-                    <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 mb-2">
                         <label class="fw-bold form-label">Pesquisar</label>
-                        <input class="form-control" placeholder="Modelo / ID">
+                        <input class="form-control" placeholder="Modelo/ID">
                     </div>
-
                     <div class="col-md-6">
                         <label class="fw-bold form-label">Tipo</label>
                         <select class="form-select">
@@ -111,65 +98,44 @@
                             <option>Energia</option>
                         </select>
                     </div>
-
                 </div>
             </div>
-            <div class="card p-3 mt-4 shadow-sm">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nome</th>
-                            <th>Dado Atual</th>
-                            <th>Tipo</th>
-                            <th>Localização</th>
-                            <th>Ações</th>
-                        </tr>
-                    </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>#00001</td>
-                            <td>Sensor</td>
-                            <td>Caio Leite</td>
-                            <td>Temperatura</td>
-                            <td>Xique-Xique</td>
-                            <td>👁 ✏ 🗑</td>
-                        </tr>
-                        <tr>
-                            <td>#00001</td>
-                            <td>Sensor</td>
-                            <td>Caio Leite</td>
-                            <td>Temperatura</td>
-                            <td>Xique-Xique</td>
-                            <td>👁 ✏ 🗑</td>
-                        </tr>
-                        <tr>
-                            <td>#00001</td>
-                            <td>Sensor</td>
-                            <td>Caio Leite</td>
-                            <td>Temperatura</td>
-                            <td>Xique-Xique</td>
-                            <td>👁 ✏ 🗑</td>
-                        </tr>
-                        <tr>
-                            <td>#00001</td>
-                            <td>Sensor</td>
-                            <td>Caio Leite</td>
-                            <td>Temperatura</td>
-                            <td>Xique-Xique</td>
-                            <td>👁 ✏ 🗑</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="card p-3 shadow-sm">
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Responsável</th>
+                                <th>Tipo</th>
+                                <th>Localização</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#00001</td>
+                                <td>Sensor</td>
+                                <td>Caio Leite</td>
+                                <td>Temperatura</td>
+                                <td>Xique-Xique</td>
+                                <td>👁 ✏ 🗑</td>
+                            </tr>
+                            <tr>
+                                <td>#00002</td>
+                                <td>Sensor</td>
+                                <td>Caio Leite</td>
+                                <td>Temperatura</td>
+                                <td>Xique-Xique</td>
+                                <td>👁 ✏ 🗑</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            </table>
-
         </div>
-
-
-
-
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -177,6 +143,5 @@
         crossorigin="anonymous"></script>
     <script src="scripts/validacao-login.js"></script>
 </body>
-
 
 </html>
