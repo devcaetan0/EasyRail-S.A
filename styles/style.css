@@ -1,7 +1,8 @@
 :root {
     --cor-laranja: #fa8415;
     --cor-preto: #000000;
-    --cor-btn-hover: #eb7100;
+    --cor-btn-hover: #dd6b00;
+    --fundo-main: #e2e2e2;
 }
 
 #navbar {
@@ -13,7 +14,39 @@
     z-index: 1000;
 }
 
-/* ===== INDEX ===== */
+/* ===== CLASSES PADRONIZADAS =====*/
+
+.btn-adicionar {
+    margin-left: 75%;
+}
+
+.btn-laranja {
+    background-color: var(--cor-laranja);
+    color: var(--cor-preto);
+    font-weight: bold;
+    border: none;
+}
+
+.btn-laranja:hover {
+    background-color: var(--cor-btn-hover);
+    color: var(--cor-preto);
+}
+
+.borda-laranja {
+    border: 3px solid var(--cor-laranja);
+}
+
+.titulo-pagina {
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+.main-padrao {
+    margin-top: 70px;
+    padding: 0 40px;
+}
+
+/* ===== INDEX =====*/
 
 #body-login {
     background-image: url(../assets/images/fundo-login.webp);
@@ -47,34 +80,12 @@
     font-size: 25px;
 }
 
-/* ===== PÁGINA HOME ===== */
+/* ===== PÁGINA HOME =====*/
 
 .logo-home {
     height: 400px;
     width: 400px;
     margin-top: 50px;
-}
-
-.titulo-home {
-    font-size: 35px;
-}
-
-.card-home {
-    background-color: white;
-    border: 3px solid var(--cor-laranja);
-    border-radius: 15px;
-}
-
-.btn-home {
-    background-color: var(--cor-laranja);
-    color: var(--cor-preto);
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.btn-home:hover {
-    background-color: var(--cor-btn-hover);
-    color: var(--cor-preto);
 }
 
 .fade-in {
@@ -91,54 +102,4 @@
         opacity: 1;
         transform: translateY(0px);
     }
-}
-
-/* ===== CADASTRO FUNCIONÁRIOS ===== */
-
-#body-funcionarios {
-    margin-top: 100px;
-    margin-right: 40px;
-    margin-left: 65px;
-}
-
-.borda-funcionarios {
-    border-color: var(--cor-laranja);
-    border: 2px solid var(--cor-laranja);
-}
-
-.btn-funcionarios {
-    color: black;
-    background-color: var(--cor-laranja);
-    border-radius: 2px;
-}
-
-.titulo-funcionarios {
-    margin-left: 100px;
-    margin-top: 70px;
-}
-
-/* ===== CADASTRO SENSORES ===== */
-
-.titulo-sensores {
-    margin-left: 325px;
-    margin-top: 70px;
-}
-
-
-.ml-btn {
-    margin-left: 75%;
-}
-
-.btn-add-sensor {
-    color: black;
-    background-color: var(--cor-laranja);
-    border-radius: 3px;
-    width: 190px;
-    height: 30px;
-    padding: 0px;
-}
-
-.borda-sensor {
-    border-color: var(--cor-laranja);
-    border: 2px solid var(--cor-laranja);
 }

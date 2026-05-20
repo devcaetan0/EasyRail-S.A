@@ -40,35 +40,37 @@
         </nav>
     </header>
 
+    <h1 class="titulo-pagina fw-bold">Cadastro de Funcionário</h1>
 
-    <h1 class="titulo-funcionarios fw-bold">Cadastro de Funcionário</h1>
-
-    <main id="body-funcionarios" class="text-black">
+    <main class="main-padrao">
         <div class="d-flex">
             <div class="col-10 col-md-4 col-lg-3 px-4">
-                <div class="card borda-funcionarios shadow p-3">
+                <div class="card borda-laranja rounded shadow-sm p-3">
                     <div class="card-body">
                         <form id="form-funcionarios" class="row g-3">
                             <h2 id="titulo" class="text-center fw-bold"></h2>
 
                             <div class="mb-2">
                                 <label for="nome" class="form-label fw-bold ">Nome Usuário</label>
-                                <input type="text" class="form-control borda-funcionarios" id="nome" value="Dig@ite o nome" required>
+                                <input type="text" class="form-control borda-laranja rounded" id="nome"
+                                    value="Digite o nome" required>
                             </div>
 
                             <div class="mb-2">
-                                <label for="senha" class="form-label fw-bold">Email Institucional </label>
-                                <input type="email" class="form-control borda-funcionarios" id="email" value="Digite@mail" required>
+                                <label for="senha" class="form-label fw-bold">E-mail Institucional </label>
+                                <input type="email" class="form-control borda-laranja rounded" id="email"
+                                    value="Digite@email" required>
                             </div>
 
                             <div class="mb-2">
                                 <label for="email" class="form-label fw-bold">Senha Funcionário</label>
-                                <input type="password" class="form-control borda-funcionarios" id="senha" value="Digite a senha" required>
+                                <input type="password" class="form-control borda-laranja rounded" id="senha"
+                                    value="Digite a senha" required>
                             </div>
 
                             <div class="mb-2">
                                 <label for="setor" class="form-label fw-bold">Setor</label>
-                                <select name="Setor" class="form-control borda-funcionarios" id="setor" required>
+                                <select name="Setor" class="form-control borda-laranja rounded" id="setor" required>
                                     <option selected>Gestão</option>
                                     <option value="1">Chefe - Setor</option>
                                     <option value="2">Operacional</option>
@@ -78,7 +80,7 @@
                             </div>
 
                             <div class="mb-2 mt-4">
-                                <button type="submit" class="btn-funcionarios borda-funcionarios w-100 p-2 fw-bold">
+                                <button type="submit" class="btn-laranja rounded w-100 p-2 fw-bold">
                                     Cadastrar
                                 </button>
                             </div>
@@ -98,12 +100,12 @@
                     <div class="row mb-4">
 
                         <div class="col-md-6">
-                            <label>Pesquisar</label>
-                            <input class="form-control">
+                            <label class="fw-bold form-label">Pesquisar</label>
+                            <input class="form-control" placeholder="Nome / ID">
                         </div>
 
                         <div class="col-md-6">
-                            <label>Atuação</label>
+                            <label class="fw-bold form-label">Atuação</label>
                             <select class="form-select">
                                 <option>Todos</option>
                                 <option>Gestão</option>
@@ -133,19 +135,17 @@
                                 <td>#00001</td>
                                 <td>Gestão</td>
                                 <td>Caio Leite</td>
-                                <td><button class="btn-editar" id="1">✏</button><button class="btn-excluir" id="1">🗑</button></td>
+                                <td><button class="btn-editar" id="1">✏</button><button class="btn-excluir"
+                                        id="1">🗑</button></td>
                             </tr>
                         </tbody>
 
                     </table>
 
                 </div>
-                </table>
 
             </div>
-
-
-
+        </div>
 
     </main>
 
@@ -154,6 +154,5 @@
         crossorigin="anonymous"></script>
     <script src="../scripts/funcionarios.js"></script>
 </body>
-
 
 </html>

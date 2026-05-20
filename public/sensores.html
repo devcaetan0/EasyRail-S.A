@@ -40,20 +40,19 @@
         </nav>
     </header>
 
+    <h1 class="titulo-pagina fw-bold">Cadastro de Sensores</h1>
 
-    <h1 class="titulo-sensores fw-bold">Cadastro de Sensores</h1>
-
-    <main id="body-index" class="text-black">
-
-        <button type="button" class="btn btn-home ml-btn fw-bold" data-bs-toggle="modal"
+    <main class="main-padrao">
+        <button type="button" class="btn btn-laranja btn-adicionar ml-btn fw-bold" data-bs-toggle="modal"
             data-bs-target="#modalCadastro">
             + Adicionar Sensor
         </button>
         </div>
 
-        <div class="modal" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
+        <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
+            aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content text-start">
+                <div class="modal-content text-start p-2">
                     <div class="modal-header">
                         <h5 class="modal-title fw-bold" id="modalCadastroLabel">Cadastrar Novo Sensor</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -62,23 +61,33 @@
                     <div class="modal-body">
                         <form id="form-sensor">
                             <div class="mb-3">
-                                <label for="id-sensor" class="form-label">ID do Sensor (Ex: #00002)</label>
+                                <label for="id-sensor" class="form-label fw-bold">ID do Sensor</label>
                                 <input type="text" class="form-control" id="id-sensor" required>
                             </div>
                             <div class="mb-3">
-                                <label for="setor-sensor" class="form-label">Setor / Localização</label>
+                                <label for="setor-sensor" class="form-label fw-bold">Localização</label>
                                 <input type="text" class="form-control" id="setor-sensor" required>
                             </div>
                             <div class="mb-3">
-                                <label for="nome-sensor" class="form-label">Nome / Modelo</label>
+                                <label for="nome-sensor" class="form-label fw-bold">Nome / Modelo</label>
                                 <input type="text" class="form-control" id="nome-sensor" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold form-label">Tipo</label>
+                                <select class="form-select">
+                                    <option value="">Selecionar</option>
+                                    <option>Temperatura</option>
+                                    <option>Velocidade</option>
+                                    <option>Energia</option>
+                                </select>
                             </div>
                         </form>
                     </div>
 
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-home" id="btn-salvar">Salvar Sensor</button>
+                    <div class="d-flex justify-content-between p-3">
+                        <button type="button" class="btn btn-secondary fw-bold"
+                            data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-laranja" id="btn-salvar">Salvar Sensor</button>
                     </div>
                 </div>
             </div>
@@ -89,17 +98,17 @@
                 <div class="row mb-4">
 
                     <div class="col-md-6">
-                        <label>Pesquisar</label>
-                        <input class="form-control" placeholder="Modelo/ID">
+                        <label class="fw-bold form-label">Pesquisar</label>
+                        <input class="form-control" placeholder="Modelo / ID">
                     </div>
 
                     <div class="col-md-6">
-                        <label>Atuação</label>
+                        <label class="fw-bold form-label">Tipo</label>
                         <select class="form-select">
                             <option>Todos</option>
-                            <option>Ativado</option>
-                            <option>Inativado</option>
-                            <option>Desativado</option>
+                            <option>Temperatura</option>
+                            <option>Velocidade</option>
+                            <option>Energia</option>
                         </select>
                     </div>
 
@@ -111,7 +120,8 @@
                         <tr>
                             <th>ID</th>
                             <th>Nome</th>
-                            <th>Última Leitura</th>
+                            <th>Dado Atual</th>
+                            <th>Tipo</th>
                             <th>Localização</th>
                             <th>Ações</th>
                         </tr>
@@ -120,29 +130,33 @@
                     <tbody>
                         <tr>
                             <td>#00001</td>
-                            <td>Gestão</td>
+                            <td>Sensor</td>
                             <td>Caio Leite</td>
+                            <td>Temperatura</td>
                             <td>Xique-Xique</td>
                             <td>👁 ✏ 🗑</td>
                         </tr>
                         <tr>
                             <td>#00001</td>
-                            <td>Gestão</td>
+                            <td>Sensor</td>
                             <td>Caio Leite</td>
+                            <td>Temperatura</td>
                             <td>Xique-Xique</td>
                             <td>👁 ✏ 🗑</td>
                         </tr>
                         <tr>
                             <td>#00001</td>
-                            <td>Gestão</td>
+                            <td>Sensor</td>
                             <td>Caio Leite</td>
+                            <td>Temperatura</td>
                             <td>Xique-Xique</td>
                             <td>👁 ✏ 🗑</td>
                         </tr>
                         <tr>
                             <td>#00001</td>
-                            <td>Gestão</td>
+                            <td>Sensor</td>
                             <td>Caio Leite</td>
+                            <td>Temperatura</td>
                             <td>Xique-Xique</td>
                             <td>👁 ✏ 🗑</td>
                         </tr>
