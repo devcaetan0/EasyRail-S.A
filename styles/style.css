@@ -2,7 +2,11 @@
     --cor-laranja: #fa8415;
     --cor-preto: #000000;
     --cor-btn-hover: #dd6b00;
-    --fundo-main: #e2e2e2;
+    --fundo-cinza: #f7f7f7;
+}
+
+body {
+    background-color: var(--fundo-cinza);
 }
 
 #navbar {
@@ -15,10 +19,6 @@
 }
 
 /* ===== CLASSES PADRONIZADAS =====*/
-
-.btn-adicionar {
-    margin-left: 75%;
-}
 
 .btn-laranja {
     background-color: var(--cor-laranja);
