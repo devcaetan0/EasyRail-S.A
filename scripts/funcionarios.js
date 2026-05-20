@@ -1,4 +1,4 @@
-document.getElementById("form-funcionarios").addEventListener("submit", function(e) {
+document.getElementById("form-funcionarios").addEventListener("submit", function (e) {
     e.preventDefault();
 
     let nome = document.getElementById("nome").value.trim();
@@ -8,8 +8,8 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
 
     const tbody = document.querySelector('table tbody');
 
-    const existingIds = Array.from(tbody.querySelectorAll('tr'))    
-    .map(tr => parseInt(tr.id, 10) || 0);
+    const existingIds = Array.from(tbody.querySelectorAll('tr'))
+        .map(tr => parseInt(tr.id, 10) || 0);
     const nextId = (Math.max(0, ...existingIds) + 1).toString();
 
     const tr = document.createElement('tr');
@@ -19,21 +19,21 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
         <td>${setor}</td>
         <td>${nome}</td>
         <td>
-            <button class="btn-editar" id="${nextId}">✏</button>
-            <button class="btn-excluir" id="${nextId}">🗑</button>
+            <button class="editar btn btn-sm btn-outline-secondary" id="${nextId}">✏</button>
+            <button class="excluir btn btn-sm btn-outline-danger" id="${nextId}">🗑</button>
         </td>
     `;
-        tbody.appendChild(tr);
+    tbody.appendChild(tr);
 
     e.target.reset();
 });
 
 const tabela = document.querySelector('table');
 if (tabela) {
-    tabela.addEventListener('click', function(e) {
+    tabela.addEventListener('click', function (e) {
         const botao = e.target.closest('button');
 
-        if (botao.classList.contains('btn-excluir')) {
+        if (botao.classList.contains('excluir')) {
             const tr = botao.closest('tr');
             if (tr) {
                 tr.remove();
