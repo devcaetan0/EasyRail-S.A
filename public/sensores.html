@@ -41,25 +41,51 @@
     </header>
 
 
-    <h1 class="titulo-sensores fw-bold"> Cadastro de Sensores </h1>
+    <h1 class="titulo-sensores fw-bold">Cadastro de Sensores</h1>
 
     <main id="body-index" class="text-black">
 
-        <div class="botao-sensor">
+        <button type="button" class="btn btn-home ml-btn fw-bold" data-bs-toggle="modal"
+            data-bs-target="#modalCadastro">
+            + Adicionar Sensor
+        </button>
+        </div>
 
-            <button class="botao-sensor-cor borda-sensor fw-bold" type="submit">
+        <div class="modal" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content text-start">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="modalCadastroLabel">Cadastrar Novo Sensor</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
 
-                + Adicionar Sensor
+                    <div class="modal-body">
+                        <form id="form-sensor">
+                            <div class="mb-3">
+                                <label for="id-sensor" class="form-label">ID do Sensor (Ex: #00002)</label>
+                                <input type="text" class="form-control" id="id-sensor" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="setor-sensor" class="form-label">Setor / Localização</label>
+                                <input type="text" class="form-control" id="setor-sensor" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome-sensor" class="form-label">Nome / Modelo</label>
+                                <input type="text" class="form-control" id="nome-sensor" required>
+                            </div>
+                        </form>
+                    </div>
 
-            </button>
-
-
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-home" id="btn-salvar">Salvar Sensor</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="container mt-4">
             <div class="card p-3 mb-4 shadow-sm">
-
-
                 <div class="row mb-4">
 
                     <div class="col-md-6">
@@ -79,14 +105,14 @@
 
                 </div>
             </div>
-            <div class="card p-3 mt-4">
-
+            <div class="card p-3 mt-4 shadow-sm">
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>Funcionário</th>
-                            <th>Setor</th>
+                            <th>ID</th>
                             <th>Nome</th>
+                            <th>Última Leitura</th>
+                            <th>Localização</th>
                             <th>Ações</th>
                         </tr>
                     </thead>
@@ -96,30 +122,32 @@
                             <td>#00001</td>
                             <td>Gestão</td>
                             <td>Caio Leite</td>
+                            <td>Xique-Xique</td>
                             <td>👁 ✏ 🗑</td>
                         </tr>
                         <tr>
                             <td>#00001</td>
                             <td>Gestão</td>
                             <td>Caio Leite</td>
+                            <td>Xique-Xique</td>
                             <td>👁 ✏ 🗑</td>
                         </tr>
                         <tr>
                             <td>#00001</td>
                             <td>Gestão</td>
                             <td>Caio Leite</td>
+                            <td>Xique-Xique</td>
                             <td>👁 ✏ 🗑</td>
                         </tr>
                         <tr>
                             <td>#00001</td>
                             <td>Gestão</td>
                             <td>Caio Leite</td>
+                            <td>Xique-Xique</td>
                             <td>👁 ✏ 🗑</td>
                         </tr>
                     </tbody>
-
                 </table>
-
             </div>
             </table>
 

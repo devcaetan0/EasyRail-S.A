@@ -30,7 +30,7 @@
     width: 40%;
 }
 
-#botao-envio {
+#btn-envio {
     background-color: white;
     color: var(--cor-preto);
     font-size: 25px;
@@ -106,7 +106,7 @@
     border: 2px solid var(--cor-laranja);
 }
 
-.botao-funcionarios {
+.btn-funcionarios {
     color: black;
     background-color: var(--cor-laranja);
     border-radius: 2px;
@@ -117,8 +117,6 @@
     margin-top: 70px;
 }
 
-
-
 /* ===== CADASTRO SENSORES ===== */
 
 .titulo-sensores {
@@ -127,16 +125,17 @@
 }
 
 
-.botao-sensor {
-    margin-left: 1365px;
+.ml-btn {
+    margin-left: 75%;
 }
 
-.botao-sensor-cor {
+.btn-add-sensor {
     color: black;
     background-color: var(--cor-laranja);
     border-radius: 3px;
     width: 190px;
     height: 30px;
+    padding: 0px;
 }
 
 .borda-sensor {
