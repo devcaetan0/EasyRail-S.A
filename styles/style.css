@@ -33,17 +33,17 @@
 }
 
 .borda-laranja {
-    border: 3px solid var(--cor-laranja);
+    border: 2px solid var(--cor-laranja);
 }
 
 .titulo-pagina {
     margin-top: 50px;
-    margin-left: 10%;
+    margin-left: 3%;
 }
 
 .main-padrao {
-    margin-top: 70px;
-    padding: 0 40px;
+    margin-top: 50px;
+    padding: 0px 40px;
 }
 
 /* ===== INDEX =====*/
