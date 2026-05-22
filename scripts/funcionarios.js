@@ -54,7 +54,7 @@ if (tabela) {
     const tr = document.createElement('tr');
     tr.id = nextId;
     tr.innerHTML = `
-         <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
+            <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content text-start">
