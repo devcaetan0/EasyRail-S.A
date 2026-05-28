@@ -1,20 +1,15 @@
-# gabarito-sa
-
 # EASYRAIL
 
+A proposta do trabalho desse repositório é desenvolver um sistema de controle ferroviário, para que os usuários tenham acesso a informações vindas dos sensores presentes nos trens, nos trilhos e no ambiente para melhor análise do desempenho dos envios de carga.
 
-# Contexto: 
+# Desenvolvimento:
 
-Este é um projeto que iremos desenvolver um sistema de um ferrorama, em uma equipe de 4 pessoas, utilizando html, JavaScript e html.
+Para desenvolver o sistema, utilizaremos HTML, CSS, Javascript e Bootstrap, para que cumpra as seguintes funções:
 
+- Uma página de cadastro de funcionários, no qual somente o admin terá acesso
+- Uma página de login, para autenticar os usuários que forem utilizar o sistema;
+- Uma página de Dashboard personalizável que mostre as informações mais importantes para o usuário;
+- Uma página dos sensores do servidor, para que o usuário cadastre os sensores irão aparecer no Dashboard;
+- Uma página de relatórios dos sensores cadastrados, para que o usuário consiga armazenar dados de um certo período de tempo específico;
 
-
-
-
-
-# Desafio:
-
-Você foi designado para criar um aplicativo que receba, processe e exiba em tempo real os dados enviados pelos sensores IoT instalados na locomotiva e nos trilhos, permitindo o acompanhamento do desempenho do trem, a identificação de falhas e a geração de relatórios analíticos. Porém antes do desenvolvimento, precisamos da documentação do software para posteriormente realizar a implementação 
-
-
-DEVs: Antonio Ribeiro Neto, Davi Batista Caetano, Gabriel Maciel, Rafael Calegari Descher
+Desenvolvedores: Antonio Ribeiro Neto, Davi Batista Caetano, Gabriel Maciel Ribeiro, Rafael Calegari Descher

@@ -3,16 +3,16 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
 
     let nome = document.getElementById("nome").value.trim();
     let email = document.getElementById("email").value.trim();
-    let senha = document.getElementById("senha").value.trim();
+    let senha = document.getElementById("senha").value.trim(); //obs: o trim faz pegar os valores tirando os espaços laterais acidentais
     let setor = document.getElementById("setor").value;
 
-    const tbody = document.querySelector('table tbody');
+    let tbody = document.querySelector('table tbody');
 
-    const existingIds = Array.from(tbody.querySelectorAll('tr'))
-        .map(tr => parseInt(tr.id, 10) || 0);
-    const nextId = (Math.max(0, ...existingIds) + 1).toString();
+    let existingIds = Array.from(tbody.querySelectorAll('tr'))
+        .map(tr => parseInt(tr.id)); // pega os IDs dos <tr>  
+    let nextId = (Math.max(0, ...existingIds) + 1).toString(); //armazena o maior ID disponível
 
-    const tr = document.createElement('tr');
+    let tr = document.createElement('tr');
     tr.id = nextId;
     tr.innerHTML = `
         <td>#${nextId.padStart(5, '0')}</td>
@@ -28,13 +28,13 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
     e.target.reset();
 });
 
-const tabela = document.querySelector('table');
+let tabela = document.querySelector('table');
 if (tabela) {
     tabela.addEventListener('click', function (e) {
-        const botao = e.target.closest('button');
+        let botao = e.target.closest('button');
 
         if (botao.classList.contains('excluir')) {
-            const tr = botao.closest('tr');
+            let tr = botao.closest('tr');
             if (tr) {
                 tr.remove();
             }
@@ -42,16 +42,16 @@ if (tabela) {
         }
 
                 if (botao.classList.contains('editar')) {
-            const tr = botao.closest('tr');
+            let tr = botao.closest('tr');
             if (tr) {
 
-  const tbody = document.querySelector('table tbody');
+  let tbody = document.querySelector('table tbody');
 
-    const existingIds = Array.from(tbody.querySelectorAll('tr'))
+    let existingIds = Array.from(tbody.querySelectorAll('tr'))
         .map(tr => parseInt(tr.id, 10) || 0);
-    const nextId = (Math.max(0, ...existingIds) + 1).toString();
+    let nextId = (Math.max(0, ...existingIds) + 1).toString();
 
-    const tr = document.createElement('tr');
+    let tr = document.createElement('tr');
     tr.id = nextId;
     tr.innerHTML = `
             <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
