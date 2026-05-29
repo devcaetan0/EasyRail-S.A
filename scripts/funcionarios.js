@@ -1,16 +1,23 @@
+let counter = 1;
+
 document.getElementById("form-funcionarios").addEventListener("submit", function (e) {
     e.preventDefault();
 
     let nome = document.getElementById("nome").value.trim();
-    let email = document.getElementById("email").value.trim();
+    let email = document.getElementById("email").value.trim(); //obs: vou apagar essas anotações futuramente, atualmente elas são para estudo
     let senha = document.getElementById("senha").value.trim(); //obs: o trim faz pegar os valores tirando os espaços laterais acidentais
     let setor = document.getElementById("setor").value;
 
     let tbody = document.querySelector('table tbody');
 
+    let lastID; // guarda globalmente o último ID para não ter duplicatas
+
     let existingIds = Array.from(tbody.querySelectorAll('tr'))
         .map(tr => parseInt(tr.id)); // pega os IDs dos <tr>  
-    let nextId = (Math.max(0, ...existingIds) + 1).toString(); //armazena o maior ID disponível
+//    let nextId = (Math.max(0, ...existingIds) + 1).toString(); //armazena o maior ID disponível
+
+    counter++;
+    nextId = counter.toString();
 
     let tr = document.createElement('tr');
     tr.id = nextId;
@@ -22,8 +29,8 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
             <button class="editar btn btn-sm btn-outline-secondary" id="${nextId}">✏</button>
             <button class="excluir btn btn-sm btn-outline-danger" id="${nextId}">🗑</button>
         </td>
-    `;
-    tbody.appendChild(tr);
+    `; //padStart 5 faz ter cinco caracteres no total, e sempre zero caso não haja outro número para ser colocado
+    tbody.appendChild(tr); //cria o tr já editado na última linha do 'table tbody'
 
     e.target.reset();
 });
