@@ -1,5 +1,6 @@
 let counter = 1;
 
+//ADICIONADOR DE FUNCIONÁRIOS
 document.getElementById("form-funcionarios").addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -35,6 +36,7 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
     e.target.reset();
 });
 
+//APAGADOR DE FUNCIONÁRIOS
 let tabela = document.querySelector('table');
 if (tabela) {
     tabela.addEventListener('click', function (e) {
@@ -66,30 +68,31 @@ if (tabela) {
                 <div class="modal-dialog">
                     <div class="modal-content text-start">
                         <div class="modal-header">
-                            <h5 class="modal-title fw-bold" id="modalCadastroLabel">Cadastrar Novo Sensor</h5>
+                            <h5 class="modal-title fw-bold" id="modalCadastroLabel">Editar Funcionário</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <form id="form-sensor">
                                 <div class="mb-3">
-                                    <label for="id-sensor" class="form-label fw-bold">ID do Sensor</label>
+                                    <label for="id-sensor" class="form-label fw-bold">Nome Usuário</label>
                                     <input type="text" class="form-control" id="id-sensor" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="setor-sensor" class="form-label fw-bold">Localização</label>
+                                    <label for="setor-sensor" class="form-label fw-bold">Email Institucional</label>
                                     <input type="text" class="form-control" id="setor-sensor" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="nome-sensor" class="form-label fw-bold">Nome</label>
+                                    <label for="nome-sensor" class="form-label fw-bold">Senha Funcionário</label>
                                     <input type="text" class="form-control" id="nome-sensor" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label class="fw-bold form-label">Tipo</label>
+                                    <label class="fw-bold form-label">Setor</label>
                                     <select class="form-select">
-                                        <option>Selecionar</option>
-                                        <option>Temperatura</option>
-                                        <option>Velocidade</option>
-                                        <option>Energia</option>
+                                    <option selected>Gestão</option>
+                                    <option>Chefe - Setor</option>
+                                    <option>Operacional</option>
+                                    <option>Administrativo</option>
+                                    <option>Funcionários</option>
                                     </select>
                                 </div>
                             </form>
@@ -103,7 +106,7 @@ if (tabela) {
                 </div>
             </div>
     `;
-    tbody.appendChild(tr);
+    document.querySelector('main').appendChild(tr);
 
     e.target.reset();
 
@@ -113,6 +116,3 @@ if (tabela) {
 
     });
 }
-
-//TODO: fazer a edição dos dados
-//TODO: fazer o id mais alto continuar salvo mesmo depois de deletado
