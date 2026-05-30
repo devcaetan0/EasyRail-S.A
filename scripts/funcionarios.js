@@ -1,4 +1,5 @@
 let counter = 1;
+let tr = document.createElement('tr');
 
 //ADICIONADOR DE FUNCIONÁRIOS
 document.getElementById("form-funcionarios").addEventListener("submit", function (e) {
@@ -13,12 +14,12 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
 
     let existingIds = Array.from(tbody.querySelectorAll('tr'))
         .map(tr => parseInt(tr.id)); // pega os IDs dos <tr>  
-//    let nextId = (Math.max(0, ...existingIds) + 1).toString(); //armazena o maior ID disponível
+    //    let nextId = (Math.max(0, ...existingIds) + 1).toString(); //armazena o maior ID disponível
 
     counter++;
     nextId = counter.toString();
 
-    let tr = document.createElement('tr');
+    tr = document.createElement('tr');
     tr.id = nextId;
     tr.innerHTML = `
         <tr id="${nextId}">
@@ -37,20 +38,27 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
     e.target.reset();
 });
 
-    document.querySelector('table').addEventListener('click', function (e) {
-        let botao = e.target.closest('button');
+document.querySelector('table').addEventListener('click', function (e) {
 
-        if (botao.classList.contains('excluir')) { //apaga o funcionário clicado
-            let tr = botao.closest('tr');
-            if (tr) {tr.remove();}
-            return;
-        }
+    let botao = e.target.closest('button');
 
-                if (botao.classList.contains('editar')) { //a partir daqui é o editor de funcionário
-            let tr = botao.closest('tr');
-            if (tr) {
-    let tr = document.createElement('tr');
-    tr.innerHTML = `
+    if (botao.classList.contains('excluir')) { //apaga o funcionário clicado
+
+        tr = botao.closest('tr');
+        if (tr) { tr.remove(); }
+        return;
+
+    }
+
+    if (botao.classList.contains('editar')) { //a partir daqui é o editor de funcionário
+
+        tr = botao.closest('tr');
+
+        if (tr) {
+            let setor = tr.querySelector('.setor-tr').textContent;
+            let nome = tr.querySelector('.nome-tr').textContent;
+            let trHTML = document.createElement('tr');
+            trHTML.innerHTML = `
             <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -63,12 +71,12 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
                             <form id="form-sensor">
                                 <div class="mb-3">
                                     <label for="id-sensor" class="form-label fw-bold">Nome Usuário</label>
-                                    <input type="text" class="form-control" id="id-sensor" required>
+                                    <input type="text" class="form-control" id="id-sensor" value="${nome}"required>
                                 </div>
                                 <div class="mb-3">
                                     <label class="fw-bold form-label">Setor</label>
-                                    <select class="form-select">
-                                    <option selected>Gestão</option>
+                                    <select class="form-select" id="edit-setor">
+                                    <option>Gestão</option>
                                     <option>Chefe - Setor</option>
                                     <option>Operacional</option>
                                     <option>Administrativo</option>
@@ -86,12 +94,10 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
                 </div>
             </div>
     `;
-    document.querySelector('main').appendChild(tr);
-
-    e.target.reset();
-
-            }
-            return;
+            document.querySelector('main').appendChild(trHTML);
+            document.getElementById('edit-setor').value = setor;
         }
+        return;
+    }
 
-    });
+}); //a ideia é que o editor venha com os items dos ids mais proximos do botao de click, e quando eu crico em submit no botao do editor ele muda os td do id com os dados novos
