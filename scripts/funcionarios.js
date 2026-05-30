@@ -4,10 +4,8 @@ let counter = 1;
 document.getElementById("form-funcionarios").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    let nome = document.getElementById("nome").value.trim();
-    let email = document.getElementById("email").value.trim(); //obs: vou apagar essas anotações futuramente, atualmente elas são para estudo
-    let senha = document.getElementById("senha").value.trim(); //obs: o trim faz pegar os valores tirando os espaços laterais acidentais
-    let setor = document.getElementById("setor").value;
+    let nome = document.getElementById("nome").value.trim();//obs: vou apagar essas anotações futuramente, atualmente elas são para estudo
+    let setor = document.getElementById("setor").value;//obs: o trim faz pegar os valores tirando os espaços laterais acidentais
 
     let tbody = document.querySelector('table tbody');
 
@@ -23,45 +21,35 @@ document.getElementById("form-funcionarios").addEventListener("submit", function
     let tr = document.createElement('tr');
     tr.id = nextId;
     tr.innerHTML = `
-        <td>#${nextId.padStart(5, '0')}</td>
-        <td>${setor}</td>
-        <td>${nome}</td>
-        <td>
-            <button class="editar btn btn-sm btn-outline-secondary" id="${nextId}">✏</button>
-            <button class="excluir btn btn-sm btn-outline-danger" id="${nextId}">🗑</button>
-        </td>
+        <tr id="${nextId}">
+            <td id="${nextId}">#${nextId.padStart(5, '0')}</td>
+            <td id="${nextId}" class="setor-tr">${setor}</td>
+            <td id="${nextId}" class="nome-tr">${nome}</td>
+            <td id="${nextId}">
+                <button class="editar btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                    data-bs-target="#modalCadastro" id="${nextId}">✏</button>
+                <button class="excluir btn btn-sm btn-outline-danger" id="${nextId}">🗑</button>
+            </td>
+        </tr>
     `; //padStart 5 faz ter cinco caracteres no total, e sempre zero caso não haja outro número para ser colocado
     tbody.appendChild(tr); //cria o tr já editado na última linha do 'table tbody'
 
     e.target.reset();
 });
 
-//APAGADOR DE FUNCIONÁRIOS
-let tabela = document.querySelector('table');
-if (tabela) {
-    tabela.addEventListener('click', function (e) {
+    document.querySelector('table').addEventListener('click', function (e) {
         let botao = e.target.closest('button');
 
-        if (botao.classList.contains('excluir')) {
+        if (botao.classList.contains('excluir')) { //apaga o funcionário clicado
             let tr = botao.closest('tr');
-            if (tr) {
-                tr.remove();
-            }
+            if (tr) {tr.remove();}
             return;
         }
 
-                if (botao.classList.contains('editar')) {
+                if (botao.classList.contains('editar')) { //a partir daqui é o editor de funcionário
             let tr = botao.closest('tr');
             if (tr) {
-
-  let tbody = document.querySelector('table tbody');
-
-    let existingIds = Array.from(tbody.querySelectorAll('tr'))
-        .map(tr => parseInt(tr.id, 10) || 0);
-    let nextId = (Math.max(0, ...existingIds) + 1).toString();
-
     let tr = document.createElement('tr');
-    tr.id = nextId;
     tr.innerHTML = `
             <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
                 aria-hidden="true">
@@ -76,14 +64,6 @@ if (tabela) {
                                 <div class="mb-3">
                                     <label for="id-sensor" class="form-label fw-bold">Nome Usuário</label>
                                     <input type="text" class="form-control" id="id-sensor" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="setor-sensor" class="form-label fw-bold">Email Institucional</label>
-                                    <input type="text" class="form-control" id="setor-sensor" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="nome-sensor" class="form-label fw-bold">Senha Funcionário</label>
-                                    <input type="text" class="form-control" id="nome-sensor" required>
                                 </div>
                                 <div class="mb-3">
                                     <label class="fw-bold form-label">Setor</label>
@@ -115,4 +95,3 @@ if (tabela) {
         }
 
     });
-}
