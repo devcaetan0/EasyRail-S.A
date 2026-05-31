@@ -41,48 +41,6 @@
                 </button>
             </div>
 
-            <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content text-start">
-                        <div class="modal-header">
-                            <h5 class="modal-title fw-bold" id="modalCadastroLabel">Cadastrar Novo Sensor</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form id="form-sensor">
-                                <div class="mb-3">
-                                    <label for="id-sensor" class="form-label fw-bold">ID do Sensor</label>
-                                    <input type="text" class="form-control" id="id-sensor" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="setor-sensor" class="form-label fw-bold">Localização</label>
-                                    <input type="text" class="form-control" id="setor-sensor" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="nome-sensor" class="form-label fw-bold">Nome</label>
-                                    <input type="text" class="form-control" id="nome-sensor" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="fw-bold form-label">Tipo</label>
-                                    <select class="form-select">
-                                        <option>Selecionar</option>
-                                        <option>Temperatura</option>
-                                        <option>Velocidade</option>
-                                        <option>Energia</option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer justify-content-between">
-                            <button type="button" class="btn btn-secondary fw-bold"
-                                data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-laranja" id="btn-salvar">Salvar Sensor</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <div class="card p-3 mb-4 shadow-sm">
                 <div class="row">
                     <div class="col-md-6 mb-2">
@@ -115,33 +73,71 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>#00001</td>
-                                <td>Sensor</td>
-                                <td>Caio Leite</td>
-                                <td>Temperatura</td>
-                                <td>Xique-Xique</td>
-                                <td>👁 ✏ 🗑</td>
-                            </tr>
-                            <tr>
-                                <td>#00002</td>
-                                <td>Sensor</td>
-                                <td>Caio Leite</td>
-                                <td>Temperatura</td>
-                                <td>Xique-Xique</td>
-                                <td>👁 ✏ 🗑</td>
+                            <tr id="1">
+                                <td id="1" >#00001</td>
+                                <td id="1" class="nome-tr">Sensor</td>
+                                <td id="1" class="responsavel-tr">Bruno Battiston</td>
+                                <td id="1" class="tipo-tr">Temperatura</td>
+                                <td id="1" class="localizacao-tr">Praia do Ervino</td>
+                                <td>
+                                    <button class="editar btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#modalCadastro" id="1">✏</button>
+                                    <button class="excluir btn btn-sm btn-outline-danger" id="1">🗑</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="modalCadastro" tabindex="-1" aria-labelledby="modalCadastroLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content text-start">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="modalCadastroLabel">Cadastrar Novo Sensor</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form-sensor">
+                            <div class="mb-3">
+                                <label for="id-sensor" class="form-label fw-bold">Nome</label>
+                                <input type="text" class="form-control" id="edit-nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="setor-sensor" class="form-label fw-bold">Responsável</label>
+                                <input type="text" class="form-control" id="edit-responsavel" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold form-label">Tipo</label>
+                                <select class="form-select" id="edit-tipo">
+                                    <option>Temperatura</option>
+                                    <option>Velocidade</option>
+                                    <option>Energia</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome-sensor" class="form-label fw-bold">Localização</label>
+                                <input type="text" class="form-control" id="edit-localizacao" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-secondary fw-bold"
+                            data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-laranja" id="btn-salvar">Salvar Sensor</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="scripts/validacao-login.js"></script>
+    <script src="../scripts/sensores.js"></script>
 </body>
 
 </html>
