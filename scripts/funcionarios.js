@@ -50,7 +50,7 @@ document.querySelector('table').addEventListener('click', function (e) {
 
     if (botao.classList.contains('editar')) { //a partir daqui é o editor de funcionário
 
-        let tr = botao.closest('tr');
+        tr = botao.closest('tr');
 
         if (tr) {
             let setor = tr.querySelector('.setor-tr').textContent;
@@ -69,6 +69,9 @@ document.getElementById("form-editor").addEventListener("submit", function (e) {
 
     let novoNome = document.getElementById('edit-nome').value.trim();
     let novoSetor = document.getElementById('edit-setor').value.trim();
+
+    const modal = bootstrap.Modal.getInstance(document.getElementById('modalCadastro'));
+    modal.hide();
 
     tr.querySelector('.nome-tr').textContent = novoNome;
     tr.querySelector('.setor-tr').textContent = novoSetor;
