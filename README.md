@@ -50,6 +50,8 @@ Scrum: Utilizaremos o Scrum como um suporte ao Kanban. Com o Kanban, nós organi
 Nosso Mockup foi focado em fazer um site com uma identidade visual diferente mas também não ser feio e o principal foco de toda nossa equipe era fácil um site fácil de entender e utiliza-lo.
 
 Mockup: (https://canva.link/9rgakr58q2oej22)
+
+
 Google Docs: (https://docs.google.com/document/d/1MB7gOFvf_L-3unkxo9Xj64JbBwdSI_qu04njbLAZorc/edit?usp=sharing)
 
 
