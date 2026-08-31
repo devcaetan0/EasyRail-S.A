@@ -1,6 +1,6 @@
 # EASYRAIL
 
-A proposta do trabalho desse repositório é desenvolver um sistema de controle ferroviário, para que os usuários tenham acesso a informações vindas dos sensores presentes nos trens, nos trilhos e no ambiente para melhor análise do desempenho dos envios de carga.
+A proposta do trabalho desse repositório é desenvolver um sistema de controle ferroviário, para que os usuários tenham acesso a informações vindas dos sensores presentes nos trens, nos trilhos e no ambiente para melhor análise do desempenho dos envios de carga. Este projeto é uma proposta de situação de aprendizagem para apredermos a desenvolver sites na pratica e demonstrar nosso conhecimento aprendido durante os anos letivos.
 
 # Desenvolvimento:
 
