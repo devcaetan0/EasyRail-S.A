@@ -17,4 +17,15 @@ Para desenvolver o sistema, utilizaremos HTML, CSS, Javascript e Bootstrap, para
 - Uma página dos sensores do servidor, para que o usuário cadastre os sensores irão aparecer no Dashboard;
 - Uma página de relatórios dos sensores cadastrados, para que o usuário consiga armazenar dados de um certo período de tempo específico;
 
+
+# Metodologias De Desenvolvimento: 
+
+Nós da Easy Rail escolhemos para este projeto utilizar duas metodologias de desenvolvimento de software agíl para o desenolvimento deste trabalho.
+
+Elas são: Kanban e Scrum.
+
+Kanban: Utilizaremos o Kanban como nosso principal suporte para gerenciar as tarefas visualmente, permitindo revisar o que temos a fazer, o que está em progresso, o que está em revisão e o que já está totalmente desenvolvido. Com ele, conseguimos distribuir as demandas de forma clara e atribuir cada responsabilidade à sua respectiva pessoa.
+
+Scrum: 
+
 Desenvolvedores: Antonio Ribeiro Neto, Davi Batista Caetano, Gabriel Maciel Ribeiro, Rafael Calegari Descher
