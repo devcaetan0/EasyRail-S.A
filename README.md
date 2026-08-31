@@ -26,6 +26,10 @@ Elas são: Kanban e Scrum.
 
 Kanban: Utilizaremos o Kanban como nosso principal suporte para gerenciar as tarefas visualmente, permitindo revisar o que temos a fazer, o que está em progresso, o que está em revisão e o que já está totalmente desenvolvido. Com ele, conseguimos distribuir as demandas de forma clara e atribuir cada responsabilidade à sua respectiva pessoa.
 
-Scrum: 
+Scrum: Utilizaremos o Scrum como um suporte ao Kanban. Com o Kanban, nós organizamos o que cada integrante irá fazer, já fez ou está fazendo. Mas, para organizar o fluxo de tudo isso, utilizaremos o Scrum: com as Sprints e reuniões, conseguiremos organizar o fluxo de trabalho, o pensamento e o alinhamento de todo o projeto. Além disso, com o Scrum e através das Sprints, conseguimos ver os pontos que nós temos que melhorar no trabalho. Assim, vamos melhorando e revisando os erros durante todo o período de desenvolvimento e, claro, dividindo em pequenas tarefas em períodos curtos de tempo, deixando o fluxo de trabalho muito mais organizado.
 
-Desenvolvedores: Antonio Ribeiro Neto, Davi Batista Caetano, Gabriel Maciel Ribeiro, Rafael Calegari Descher
+
+
+# Desenvolvedores
+
+Antonio Ribeiro Neto, Davi Batista Caetano, Gabriel Maciel Ribeiro, Rafael Calegari Descher
