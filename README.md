@@ -1,6 +1,11 @@
 # EASYRAIL
 
-A proposta do trabalho desse repositório é desenvolver um sistema de controle ferroviário, para que os usuários tenham acesso a informações vindas dos sensores presentes nos trens, nos trilhos e no ambiente para melhor análise do desempenho dos envios de carga. Este projeto é uma proposta de situação de aprendizagem para apredermos a desenvolver sites na pratica e demonstrar nosso conhecimento aprendido durante os anos letivos.
+A proposta do trabalho deste repositório é desenvolver um sistema de controle ferroviário para que os usuários tenham acesso a informações vindas dos sensores presentes nos trens, nos trilhos e no ambiente, permitindo uma melhor análise do desempenho do envio de cargas. Este projeto é uma proposta de situação de aprendizagem para aprendermos a desenvolver sites na prática e demonstrar o conhecimento adquirido durante os anos letivos. Nós escolhemos esse nome em um consenso da equipe, pois queríamos fazer um trabalho simples, mas que funcionasse e fosse prazeroso para os usuários utilizarem. Quanto à nossa identidade visual, escolhemos cores marcantes para demonstrar o nosso diferencial em relação a outros sites e ser algo inovador.
+
+Logo Easy Rail: 
+
+<img width="200" height="296" alt="image" src="https://github.com/user-attachments/assets/bac36394-90ab-4884-bdff-f28bee5d944d" />
+
 
 # Desenvolvimento:
 
