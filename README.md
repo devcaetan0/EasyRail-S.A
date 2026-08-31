@@ -4,18 +4,29 @@ A proposta do trabalho deste repositório é desenvolver um sistema de controle 
 
 Logo Easy Rail: 
 
-<img width="200" height="296" alt="image" src="https://github.com/user-attachments/assets/bac36394-90ab-4884-bdff-f28bee5d944d" />
+<img width="401" height="409" alt="image" src="https://github.com/user-attachments/assets/241489ed-718f-4496-95ce-da8c7c639fd8" />
+
 
 
 # Desenvolvimento:
 
 Para desenvolver o sistema, utilizaremos HTML, CSS, Javascript e Bootstrap, para que cumpra as seguintes funções:
 
-- Uma página de cadastro de funcionários, no qual somente o admin terá acesso
+- Uma página home mostrando todas as abas possíveis de abrir em nosso sistema como: Dashboard, Frota, Sensores, Relátorios, Equipe;
+- Uma página de cadastro de funcionários, no qual somente o admin terá acesso, para cadastrar os novos funcionários na empresa.
 - Uma página de login, para autenticar os usuários que forem utilizar o sistema;
 - Uma página de Dashboard personalizável que mostre as informações mais importantes para o usuário;
+- Uma página de Frota, para mostrar todos os trens e todas as suas rotas, para melhor organizar as frotas de trens;
 - Uma página dos sensores do servidor, para que o usuário cadastre os sensores irão aparecer no Dashboard;
 - Uma página de relatórios dos sensores cadastrados, para que o usuário consiga armazenar dados de um certo período de tempo específico;
+
+
+Página de Funcionários: Na página de cadastro de funcionários, nós temos um formulário para o cadastro contendo o nome de usuário, e-mail institucional, senha do funcionário e o setor em que o funcionário atuará. Além disso, na mesma tela, há uma lista com todos os funcionários já cadastrados, sendo possível filtrá-los na pesquisa e editá-los ou excluí-los por meio de dois botões clicáveis, que abrem um pop-up para realizar a edição ou a exclusão.
+
+Página de Login: A página de login é bem simples somente contento o nome do usuário e a senha.
+
+Página Dashboard: A página de Dashboard terá todas as informações importantes e dados dos trens e sensores.
+
 
 
 # Metodologias De Desenvolvimento: 
@@ -28,6 +39,12 @@ Kanban: Utilizaremos o Kanban como nosso principal suporte para gerenciar as tar
 
 Scrum: Utilizaremos o Scrum como um suporte ao Kanban. Com o Kanban, nós organizamos o que cada integrante irá fazer, já fez ou está fazendo. Mas, para organizar o fluxo de tudo isso, utilizaremos o Scrum: com as Sprints e reuniões, conseguiremos organizar o fluxo de trabalho, o pensamento e o alinhamento de todo o projeto. Além disso, com o Scrum e através das Sprints, conseguimos ver os pontos que nós temos que melhorar no trabalho. Assim, vamos melhorando e revisando os erros durante todo o período de desenvolvimento e, claro, dividindo em pequenas tarefas em períodos curtos de tempo, deixando o fluxo de trabalho muito mais organizado.
 
+
+# Mockup
+
+Nosso Mockup foi focado em fazer um site com uma identidade visual diferente mas também não ser feio e o principal foco de toda nossa equipe era fácil um site fácil de entender e utiliza-lo.
+
+mockup: (https://canva.link/9rgakr58q2oej22);
 
 
 # Desenvolvedores
