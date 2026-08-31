@@ -1,57 +1,74 @@
-# EASYRAIL
+<div align="center">
 
-A proposta do trabalho deste repositório é desenvolver um sistema de controle ferroviário para que os usuários tenham acesso a informações vindas dos sensores presentes nos trens, nos trilhos e no ambiente, permitindo uma melhor análise do desempenho do envio de cargas. Este projeto é uma proposta de situação de aprendizagem para aprendermos a desenvolver sites na prática e demonstrar o conhecimento adquirido durante os anos letivos. Nós escolhemos esse nome em um consenso da equipe, pois queríamos fazer um trabalho simples, mas que funcionasse e fosse prazeroso para os usuários utilizarem. Quanto à nossa identidade visual, escolhemos cores marcantes para demonstrar o nosso diferencial em relação a outros sites e ser algo inovador.
+  <img src="https://github.com/user-attachments/assets/241489ed-718f-4496-95ce-da8c7c639fd8" width="220" alt="Logo EasyRail" />
 
-Logo Easy Rail: 
+  # 🚆 EASYRAIL
 
-<img width="401" height="409" alt="image" src="https://github.com/user-attachments/assets/241489ed-718f-4496-95ce-da8c7c639fd8" />
+  **Sistema de Controle Ferroviário e Monitoramento de Cargas**
 
+  [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
+  [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
+  [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
+  [![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](#)
 
+</div>
 
-# Desenvolvimento:
+---
 
-Para desenvolver o sistema, utilizaremos HTML, CSS, Javascript e Bootstrap, para que cumpra as seguintes funções:
+## 📌 Sobre o Projeto
 
-- Uma página home mostrando todas as abas possíveis de abrir em nosso sistema como: Dashboard, Frota, Sensores, Relátorios, Equipe;
-- Uma página de cadastro de funcionários, no qual somente o admin terá acesso, para cadastrar os novos funcionários na empresa.
-- Uma página de login, para autenticar os usuários que forem utilizar o sistema;
-- Uma página de Dashboard personalizável que mostre as informações mais importantes para o usuário;
-- Uma página de Frota, para mostrar todos os trens e todas as suas rotas, para melhor organizar as frotas de trens;
-- Uma página dos sensores do servidor, para que o usuário cadastre os sensores irão aparecer no Dashboard;
-- Uma página de relatórios dos sensores cadastrados, para que o usuário consiga armazenar dados de um certo período de tempo específico;
+A proposta do **EasyRail** é desenvolver um sistema intuitivo de controle ferroviário para monitoramento do envio de cargas em tempo real. O sistema coleta e exibe dados fornecidos por sensores instalados nos trens, nos trilhos e no ambiente, permitindo uma análise precisa do desempenho operacional.
 
-  
+Este projeto nasceu como uma situação de aprendizagem prática para consolidar o desenvolvimento web. Escolhemos o nome **EasyRail** por refletir nosso objetivo central: entregar uma ferramenta simples, funcional e agradável para o usuário, complementada por uma identidade visual com cores marcantes e inovadoras.
 
-# Funcionalidades Das Principais Páginas
+---
 
-Página de Funcionários: Na página de cadastro de funcionários, nós temos um formulário para o cadastro contendo o nome de usuário, e-mail institucional, senha do funcionário e o setor em que o funcionário atuará. Além disso, na mesma tela, há uma lista com todos os funcionários já cadastrados, sendo possível filtrá-los na pesquisa e editá-los ou excluí-los por meio de dois botões clicáveis, que abrem um pop-up para realizar a edição ou a exclusão.
+## 🛠️ Tecnologias Utilizadas
 
-Página de Login: A página de login é bem simples somente contento o nome do usuário e a senha.
+* **HTML5:** Estruturação das páginas web.
+* **CSS3:** Estilização e identidade visual personalizada.
+* **JavaScript:** Lógica de navegação, manipulação de estado e pop-ups dinâmicos.
+* **Bootstrap:** Responsividade e componentes visuais de interface.
 
-Página Dashboard: A página de Dashboard terá todas as informações importantes e dados dos trens e sensores.
+---
 
-Página de Sensores: Na página de sensores, utilizamos de um pop-up ao clicar no botão "adicionar sensor", dai sim parece o formulário para cadastro do sensor contendo dados como, nome, resposnsável, tipo, localização. Também na página temos as listas de todos os sensores e contendo as funcionalidades de editar e excluir os sensores, também com um pop-up.
+## 💻 Páginas e Funcionalidades
 
+| Página | Descrição e Recursos |
+| :--- | :--- |
+| **🏠 Home** | Centraliza a navegação para todas as seções do sistema (*Dashboard, Frota, Sensores, Relatórios, Equipe*). |
+| **🔐 Login** | Autenticação simples e segura de usuários com nome de usuário e senha. |
+| **👥 Funcionários** | *(Exclusivo do Admin)* Cadastro de novos colaboradores com formulário contendo usuário, e-mail, senha e setor. Inclui tabela com busca/filtro e botões pop-up para **Edição** e **Exclusão**. |
+| **📊 Dashboard** | Painel interativo e personalizável com os dados estratégicos e indicadores em tempo real dos trens e sensores. |
+| **🚂 Frota** | Mapeamento completo dos trens e suas respectivas rotas para otimização da organização logística. |
+| **📡 Sensores** | Cadastro de sensores via janela modal/pop-up (nome, responsável, tipo e localização). Permite gerenciamento com ações de editar e excluir em cada item. |
+| **📑 Relatórios** | Histórico e armazenamento de dados gerados pelos sensores ao longo de períodos específicos. |
 
+---
 
-# Metodologias De Desenvolvimento: 
+## 🔄 Metodologias Agéis
 
-Nós da Easy Rail escolhemos para este projeto utilizar duas metodologias de desenvolvimento de software agíl para o desenolvimento deste trabalho.
+Para manter o fluxo de desenvolvimento organizado e eficiente, adotamos a combinação de duas metodologias ágeis:
 
-Elas são: Kanban e Scrum.
+* 📋 **Kanban:** Nosso quadro visual principal para gestão de demandas. As tarefas são distribuídas claramente entre colunas (*A Fazer*, *Em Progresso*, *Em Revisão* e *Concluído*), garantindo transparência nas responsabilidades de cada integrante.
+* 🏃 **Scrum:** Atua como suporte ao Kanban por meio de **Sprints** curtas e reuniões periódicas. Permite alinhar o progresso da equipe, identificar pontos de melhoria de forma contínua e corrigir eventuais falhas durante o desenvolvimento.
 
-Kanban: Utilizaremos o Kanban como nosso principal suporte para gerenciar as tarefas visualmente, permitindo revisar o que temos a fazer, o que está em progresso, o que está em revisão e o que já está totalmente desenvolvido. Com ele, conseguimos distribuir as demandas de forma clara e atribuir cada responsabilidade à sua respectiva pessoa.
+---
 
-Scrum: Utilizaremos o Scrum como um suporte ao Kanban. Com o Kanban, nós organizamos o que cada integrante irá fazer, já fez ou está fazendo. Mas, para organizar o fluxo de tudo isso, utilizaremos o Scrum: com as Sprints e reuniões, conseguiremos organizar o fluxo de trabalho, o pensamento e o alinhamento de todo o projeto. Além disso, com o Scrum e através das Sprints, conseguimos ver os pontos que nós temos que melhorar no trabalho. Assim, vamos melhorando e revisando os erros durante todo o período de desenvolvimento e, claro, dividindo em pequenas tarefas em períodos curtos de tempo, deixando o fluxo de trabalho muito mais organizado.
+## 🔗 Design e Documentação
 
+Acesse os artefatos de design e a documentação completa do projeto através dos links abaixo:
 
-# Mockup
+[![Canva](https://img.shields.io/badge/Canva-Protótipo_Mockup-00C4CC?style=for-the-badge&logo=canva&logoColor=white)](https://canva.link/9rgakr58q2oej22)
+[![Google Docs](https://img.shields.io/badge/Google_Docs-Documentação_do_Projeto-4285F4?style=for-the-badge&logo=googledocs&logoColor=white)](https://docs.google.com)
 
-Nosso Mockup foi focado em fazer um site com uma identidade visual diferente mas também não ser feio e o principal foco de toda nossa equipe era fácil um site fácil de entender e utiliza-lo.
+---
 
-mockup: (https://canva.link/9rgakr58q2oej22);
+## 👨‍💻 Desenvolvedores
 
+Projeto desenvolvido com dedicação por:
 
-# Desenvolvedores
-
-Antonio Ribeiro Neto, Davi Batista Caetano, Gabriel Maciel Ribeiro, Rafael Calegari Descher
+* 🛠️ **Antonio Ribeiro Neto**
+* 🛠️ **Davi Batista Caetano**
+* 🛠️ **Gabriel Maciel Ribeiro**
+* 🛠️ **Rafael Calegari Descher**
