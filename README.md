@@ -2,9 +2,15 @@
 
 A proposta do trabalho deste repositório é desenvolver um sistema de controle ferroviário para que os usuários tenham acesso a informações vindas dos sensores presentes nos trens, nos trilhos e no ambiente, permitindo uma melhor análise do desempenho do envio de cargas. Este projeto é uma proposta de situação de aprendizagem para aprendermos a desenvolver sites na prática e demonstrar o conhecimento adquirido durante os anos letivos. Nós escolhemos esse nome em um consenso da equipe, pois queríamos fazer um trabalho simples, mas que funcionasse e fosse prazeroso para os usuários utilizarem. Quanto à nossa identidade visual, escolhemos cores marcantes para demonstrar o nosso diferencial em relação a outros sites e ser algo inovador.
 
-Logo Easy Rail: 
 
-<img width="401" height="409" alt="image" src="https://github.com/user-attachments/assets/241489ed-718f-4496-95ce-da8c7c639fd8" />
+## Identidade Visual e Documentação
+
+Nosso Mockup foi focado em fazer um site com uma identidade visual diferente mas também não ser feio e o principal foco de toda nossa equipe era fácil um site fácil de entender e utiliza-lo.
+
+* **Mockup:** [Acesse o Mockup no Canva](https://canva.link/9rgakr58q2oej22)
+
+
+* **Google Docs**: [Google Docs do Projeto](https://docs.google.com/document/d/1MB7gOFvf_L-3unkxo9Xj64JbBwdSI_qu04njbLAZorc/edit?usp=sharing)
 
 
 
@@ -44,15 +50,6 @@ Kanban: Utilizaremos o Kanban como nosso principal suporte para gerenciar as tar
 
 Scrum: Utilizaremos o Scrum como um suporte ao Kanban. Com o Kanban, nós organizamos o que cada integrante irá fazer, já fez ou está fazendo. Mas, para organizar o fluxo de tudo isso, utilizaremos o Scrum: com as Sprints e reuniões, conseguiremos organizar o fluxo de trabalho, o pensamento e o alinhamento de todo o projeto. Além disso, com o Scrum e através das Sprints, conseguimos ver os pontos que nós temos que melhorar no trabalho. Assim, vamos melhorando e revisando os erros durante todo o período de desenvolvimento e, claro, dividindo em pequenas tarefas em períodos curtos de tempo, deixando o fluxo de trabalho muito mais organizado.
 
-
-# Mockup
-
-Nosso Mockup foi focado em fazer um site com uma identidade visual diferente mas também não ser feio e o principal foco de toda nossa equipe era fácil um site fácil de entender e utiliza-lo.
-
-Mockup: (https://canva.link/9rgakr58q2oej22)
-
-
-Google Docs: (https://docs.google.com/document/d/1MB7gOFvf_L-3unkxo9Xj64JbBwdSI_qu04njbLAZorc/edit?usp=sharing)
 
 
 # Desenvolvedores
