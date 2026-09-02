@@ -1,4 +1,4 @@
-# EASYRAIL
+# EasyRail
 
 A proposta do trabalho deste repositório é desenvolver um sistema de controle ferroviário para que os usuários tenham acesso a informações vindas dos sensores presentes nos trens, nos trilhos e no ambiente, permitindo uma melhor análise do desempenho do envio de cargas. Este projeto é uma proposta de situação de aprendizagem para aprendermos a desenvolver sites na prática e demonstrar o conhecimento adquirido durante os anos letivos. Nós escolhemos esse nome em um consenso da equipe, pois queríamos fazer um trabalho simples, mas que funcionasse e fosse prazeroso para os usuários utilizarem. Quanto à nossa identidade visual, escolhemos cores marcantes para demonstrar o nosso diferencial em relação a outros sites e ser algo inovador.
 
@@ -40,7 +40,18 @@ Para desenvolver o sistema, utilizaremos HTML, CSS, Javascript e Bootstrap, para
 
 ### Página de Funcionários
 
-Na página de cadastro de funcionários, nós temos um formulário para o cadastro contendo o nome de usuário, e-mail institucional, senha do funcionário e o setor em que o funcionário atuará. Além disso, na mesma tela, há uma lista com todos os funcionários já cadastrados, sendo possível filtrá-los na pesquisa e editá-los ou excluí-los por meio de dois botões clicáveis, que abrem um pop-up para realizar a edição ou a exclusão.
+Área restrita contendo um formulário completo para preenchimento de:
+
+*Nome de Usuário
+*Email Institucional
+*Senha 
+*Setor
+
+E uma listagem completa de todos os funcionários cadastrados no sistema com os seguintes dados:
+
+*ID funcionário
+*Nome
+*Setor
 
 ### Página de Login
 
@@ -52,21 +63,37 @@ A página de Dashboard terá todas as informações importantes e dados dos tren
 
 ### Página de Sensores
 
-Na página de sensores, utilizamos de um pop-up ao clicar no botão "adicionar sensor", dai sim parece o formulário para cadastro do sensor contendo dados como, nome, resposnsável, tipo, localização. Também na página temos as listas de todos os sensores e contendo as funcionalidades de editar e excluir os sensores, também com um pop-up.
+Área contendo toda listagem dos sensores e um botao para adicionar novos sensores:
+
+*ID Sensor
+*Nome Sensor
+*Responsável
+*Tipo
+*Localização
+
+Pop-up Cadastrar Novo Sensor contendo:
+
+*Nome
+*Responsável
+*Tipo
+*Localização
 
 
 ## Metodologias De Desenvolvimento: 
 
-Nós da Easy Rail escolhemos para este projeto utilizar duas metodologias de desenvolvimento de software agíl para o desenolvimento deste trabalho.
-
-Elas são: Kanban e Scrum.
+Para garantir a eficiência e entrega contínua do projeto, escolhemos adotar duas metodologias de desenvolvimento de software: Kanban e Scrum.
 
 ### Kanban
 
-Utilizaremos o Kanban como nosso principal suporte para gerenciar as tarefas visualmente, permitindo revisar o que temos a fazer, o que está em progresso, o que está em revisão e o que já está totalmente desenvolvido. Com ele, conseguimos distribuir as demandas de forma clara e atribuir cada responsabilidade à sua respectiva pessoa.
+Utilizaremos o Kanban como nosso principal suporte para gerenciar as tarefas visualmente e organizar as tarefas individualmente.
+
+* "A fazer"
+* "Em progresso"
+* "Revisão"
+* "Entregue"
 
 ### Scrum
 
-Utilizaremos o Scrum como um suporte ao Kanban. Com o Kanban, nós organizamos o que cada integrante irá fazer, já fez ou está fazendo. Mas, para organizar o fluxo de tudo isso, utilizaremos o Scrum: com as Sprints e reuniões, conseguiremos organizar o fluxo de trabalho, o pensamento e o alinhamento de todo o projeto. Além disso, com o Scrum e através das Sprints, conseguimos ver os pontos que nós temos que melhorar no trabalho. Assim, vamos melhorando e revisando os erros durante todo o período de desenvolvimento e, claro, dividindo em pequenas tarefas em períodos curtos de tempo, deixando o fluxo de trabalho muito mais organizado.
+Utilizaremos o Scrum como um suporte ao Kanban. Utilizaremos o Scrum: com as Sprints e reuniões, conseguiremos organizar o fluxo de trabalho, o pensamento e o alinhamento de todo o projeto. Além disso, com o Scrum e através das Sprints, conseguimos ver os pontos que nós temos que melhorar no trabalho. Assim, vamos melhorando e revisando os erros durante todo o período de desenvolvimento e, claro, dividindo em pequenas tarefas em períodos curtos de tempo, deixando o fluxo de trabalho muito mais organizado.
 
 
