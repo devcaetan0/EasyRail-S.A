@@ -22,7 +22,7 @@ Para desenvolver o sistema, utilizaremos HTML, CSS, Javascript e Bootstrap, para
 
   
 
-# Funcionalidades Das Principais Páginas
+## Funcionalidades Das Principais Páginas
 
 Página de Funcionários: Na página de cadastro de funcionários, nós temos um formulário para o cadastro contendo o nome de usuário, e-mail institucional, senha do funcionário e o setor em que o funcionário atuará. Além disso, na mesma tela, há uma lista com todos os funcionários já cadastrados, sendo possível filtrá-los na pesquisa e editá-los ou excluí-los por meio de dois botões clicáveis, que abrem um pop-up para realizar a edição ou a exclusão.
 
