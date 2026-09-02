@@ -42,16 +42,16 @@ Para desenvolver o sistema, utilizaremos HTML, CSS, Javascript e Bootstrap, para
 
 Área restrita contendo um formulário completo para preenchimento de:
 
-*Nome de Usuário
-*Email Institucional
-*Senha 
-*Setor
+* Nome de Usuário
+* Email Institucional
+* Senha 
+* Setor
 
 E uma listagem completa de todos os funcionários cadastrados no sistema com os seguintes dados:
 
-*ID funcionário
-*Nome
-*Setor
+* ID funcionário
+* Nome
+* Setor
 
 ### Página de Login
 
