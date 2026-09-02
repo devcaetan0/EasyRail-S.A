@@ -52,36 +52,43 @@ E uma listagem completa de todos os funcionários cadastrados no sistema com os 
 * ID funcionário
 * Nome
 * Setor
+  
 
 ### Página de Login
 
 A página de login é bem simples somente contento o nome do usuário e a senha.
 
+
+
 ### Página Dashboard
 
 A página de Dashboard terá todas as informações importantes e dados dos trens e sensores.
+
+
 
 ### Página de Sensores
 
 Área contendo toda listagem dos sensores e um botao para adicionar novos sensores:
 
-*ID Sensor
-*Nome Sensor
-*Responsável
-*Tipo
-*Localização
+* ID Sensor
+* Nome Sensor
+* Responsável
+* Tipo
+* Localização
 
 Pop-up Cadastrar Novo Sensor contendo:
 
-*Nome
-*Responsável
-*Tipo
-*Localização
+* Nome
+* Responsável
+* Tipo
+* Localização
+
 
 
 ## Metodologias De Desenvolvimento: 
 
 Para garantir a eficiência e entrega contínua do projeto, escolhemos adotar duas metodologias de desenvolvimento de software: Kanban e Scrum.
+
 
 ### Kanban
 
@@ -91,6 +98,7 @@ Utilizaremos o Kanban como nosso principal suporte para gerenciar as tarefas vis
 * "Em progresso"
 * "Revisão"
 * "Entregue"
+
 
 ### Scrum
 
