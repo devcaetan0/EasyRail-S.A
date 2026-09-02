@@ -10,11 +10,20 @@ Nosso Mockup foi focado em fazer um site com uma identidade visual diferente mas
 * **Mockup:** [Acesse o Mockup no Canva](https://canva.link/9rgakr58q2oej22)
 
 
-* **Google Docs**: [Google Docs do Projeto](https://docs.google.com/document/d/1MB7gOFvf_L-3unkxo9Xj64JbBwdSI_qu04njbLAZorc/edit?usp=sharing)
+* **Documentação Oficial**: [Google Docs do Projeto](https://docs.google.com/document/d/1MB7gOFvf_L-3unkxo9Xj64JbBwdSI_qu04njbLAZorc/edit?usp=sharing)
 
 
+## Tecnologias Utilizadas
 
-# Desenvolvimento:
+O sistema do frontend foi construído utiizando as seguintes tecnologias:
+
+* **HTML** - Estrturação sêmantica das páginas.
+* **CSS** - Estilização e identidade visual personalizada.
+* **Javascript** - Comportamentos dinâmicos, consumo de dados e interatividade.
+* **Bootstrap** - Agilidade no design e padronização.
+
+
+## Estrutura do Sistema:
 
 Para desenvolver o sistema, utilizaremos HTML, CSS, Javascript e Bootstrap, para que cumpra as seguintes funções:
 
@@ -40,7 +49,7 @@ Página de Sensores: Na página de sensores, utilizamos de um pop-up ao clicar n
 
 
 
-# Metodologias De Desenvolvimento: 
+## Metodologias De Desenvolvimento: 
 
 Nós da Easy Rail escolhemos para este projeto utilizar duas metodologias de desenvolvimento de software agíl para o desenolvimento deste trabalho.
 
@@ -52,7 +61,7 @@ Scrum: Utilizaremos o Scrum como um suporte ao Kanban. Com o Kanban, nós organi
 
 
 
-# Desenvolvedores
+## Desenvolvedores
 
 Antonio Ribeiro Neto, Davi Batista Caetano, Gabriel Maciel Ribeiro, Rafael Calegari Descher
 
